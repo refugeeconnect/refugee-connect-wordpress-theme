@@ -1,0 +1,295 @@
+/*
+Theme Name: Refugee Connect
+Author: New Word Order
+Author URI: http://newwordorder.com.au
+Text Domain: refugeeconnect
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+	line-height: 1;
+    font-family: 'Ubuntu', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+strong {
+    font-weight: 700;
+}
+
+div.container {
+    width: 1048px;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.half {
+    width: 49%;
+}
+.third {
+    width: 28%;
+}
+.two-thirds {
+    width: 68%;
+}
+
+.underline {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.underline:after {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background: #f8961d;
+    position: absolute;
+    width: 50%;
+    bottom:-20px;
+    left: 25%;
+}
+.underline.leftline:after {
+    left: 0%;
+}
+
+img {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+h1.doubleMargin {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    font-weight: 300;
+    color: #393736;
+}
+
+div.container ul {
+    margin-bottom: 15px;
+}
+
+div.container ul li {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    list-style: disc;
+    margin-left: 20px;
+}
+
+div.nav ul {
+    padding: 33px 0;
+}
+
+div.nav ul li {
+    display: inline;
+}
+
+div.nav ul li a {
+    display: inline-block;
+    color: #393736;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 40px;
+}
+div.nav ul li a:hover {
+    color: #f8961d;
+}
+
+div.header {
+    padding: 20px 0 30px;
+}
+
+div.banner {
+    width: 100%;
+    background: url("images/banner-bg.jpg") no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+div.banner h1 {
+    font-size: 40px;
+    color: #f8961d;
+    font-weight: 400;
+}
+
+div.whiteBox {
+    background: #fff;
+    padding: 40px;
+}
+
+div.grid div.third {
+    float: left;
+    margin: 0 5% 0 0;
+    width: 30%;
+}
+
+div.grid div.third:nth-child(3n) {
+    margin-right: 0;
+}
+
+a.button {
+    background: #fdcb83;
+    padding: 10px 40px;
+    border: 2px solid #f8961d;
+    border-radius: 5px;
+    color: #393736;
+    text-decoration: none;
+    display: inline-block;
+}
+a.button:hover {
+    background: #f8961d;
+    color: #fff;
+}
+
+div.container ul {
+    margin-bottom: 15px;
+}
+
+div.imageGrid {
+    padding: 10px;
+    background: #fff;
+    border: 2px solid #f1f2f2;
+    height: 68px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#footer {
+    color: #6d6e71;
+}
+
+div#footer ul li {
+    display: inline;
+}
+
+div#footer ul li a {
+    display: inline-block;
+    color: #6d6e71;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+small {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+em {
+    font-style: italic;
+}
+
+span.donate {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input[type=image] {
+    width: 90px;
+}
+
+table.paypal {
+    width: 100%;
+}
+
+table.paypal td {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 5px;
+}
+
+table.paypal tr:last-child td {
+    border-bottom: none;
+}
+
+
+
+
