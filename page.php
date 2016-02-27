@@ -41,7 +41,7 @@
             <?php if ( have_rows( 'about_box' ) ): ?>
 				<?php while ( have_rows( 'about_box' ) ) : the_row(); ?>
 					<div class="whiteBox half <?php the_sub_field('alignment'); ?>" style="text-align: center;">
-		                <img src="<?php the_sub_field('image') ?>" width="256">
+				<img src="<?= wp_get_attachment_image_url(get_sub_field('image'), 'medium') ?>" srcset="<?= wp_get_attachment_image_srcset(get_sub_field('image')); ?>" width="256">
 		                <?php the_sub_field('text'); ?>
 		            </div>
 				<?php endwhile; ?>
@@ -55,8 +55,8 @@
 
         <div id="what-we-do">
             <div class="third left">
-                <img src="<?php the_field('what_we_do_image'); ?>" width="100%">
-            </div>
+		<img src="<?= wp_get_attachment_image_url(get_field('what_we_do_image'), 'medium'); ?>" srcset="<?= wp_get_attachment_image_srcset(get_field('what_we_do_image')); ?>" width="100%">
+		            </div>
             <div class="two-thirds right">
                 <?php the_field('what_we_do_text'); ?>
             </div>
@@ -68,14 +68,14 @@
                 <?php the_field('why_do_we_help_refugees_text'); ?>
             </div>
             <div class="third right">
-                <img src="<?php the_field('why_do_we_help_refugees_image'); ?>" style="width: 100%;">
+                <img src="<?= wp_get_attachment_image_url(get_field('why_do_we_help_refugees_image'), 'medium'); ?>" srcset="<?= wp_get_attachment_image_srcset(get_field('why_do_we_help_refugees_image')); ?>" style="width: 100%;">
             </div>
             <div style="clear: both;"></div>
         </div>
 
         <div id="position" class="section">
             <div class="third left">
-                <img src="<?php the_field('our_position_image'); ?>" style="width: 100%;">
+                <img src="<?= wp_get_attachment_image_url(get_field('our_position_image'), 'medium'); ?>" srcset="<?= wp_get_attachment_image_srcset(get_field('our_position_image')); ?>" style="width: 100%;">
             </div>
 
             <div class="two-thirds right">
@@ -115,7 +115,7 @@
                 <?php the_field('workshops_text'); ?>
             </div>
             <div class="third right">
-                <img src="<?php the_field('workshops_image'); ?>" style="width: 100%;">
+                <img src="<?= wp_get_attachment_image_url(get_field('workshops_image'), 'medium'); ?>" srcset="<?= wp_get_attachment_image_srcset(get_field('workshops_image')); ?>" style="width: 100%;">
             </div>
             <div style="clear: both;"></div>
         </div>
