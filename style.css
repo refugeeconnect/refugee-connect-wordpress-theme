@@ -188,7 +188,6 @@ div.header {
 
 div.banner {
     width: 100%;
-    background: url("images/banner-bg.jpg") no-repeat;
     background-size: cover;
     padding: 60px 0;
 }

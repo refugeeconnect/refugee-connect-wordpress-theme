@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <div class="banner">
+    <div class="banner" style="background: url('https://refugeeconnect.org.au/wp-content/themes/refugeeconnect/images/banner-bg.jpg') no-repeat;">
         <div class="container">
             <div class="callout center">
                 <img src="<?php echo bloginfo('template_directory'); ?>/images/callout-img.png" style="width: 260px;margin-bottom: 20px;">
