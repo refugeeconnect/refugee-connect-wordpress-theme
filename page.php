@@ -6,6 +6,7 @@
     <title>Refugee Connect</title>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/style.css">
+    <?php wp_head(); ?> 
 </head>
 <body>
 
@@ -157,6 +158,6 @@
             <div style="clear: both;"></div>
         </div>
     </div>
-
+<?php wp_footer(); ?> 
 </body>
 </html>
