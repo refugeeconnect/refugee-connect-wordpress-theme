@@ -12,7 +12,7 @@
 
     <div class="header">
         <div class="container">
-            <div class="logo left"><img src="<?php echo bloginfo('template_directory'); ?>/images/logo-colour.png" width="350"></div>
+            <div class="logo left"><img src="/wp-content/uploads/2016/10/Refugee_Connect_logo-wide_low.png" width="350"></div>
             <div class="nav right" style="text-align: right;">
                 <ul>
                     <li><a href="#">HOME</a></li>
