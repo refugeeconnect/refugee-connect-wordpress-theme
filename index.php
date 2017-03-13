@@ -1,30 +1,33 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1400px">
-    <title>Refugee Connect</title>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/style.css">
-</head>
-<body>
+<?php get_header(); ?>
 
-    <div class="header">
-        <div class="container">
-            <div class="logo left"><img src="/wp-content/uploads/2016/10/Refugee_Connect_logo-wide_low.png" width="350"></div>
-<!--<?php echo bloginfo('template_directory'); ?>/images/logo-colour.png-->
-            <div class="nav right" style="text-align: right;">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#donate">DONATE</a></li>
-                    <li><a href="#workshops">WORKSHOPS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </div>
-            <div style="clear: both;"></div>
-        </div>
-    </div>
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+
+            <?php
+            if ( have_posts() ) :
+                if ( is_home() && ! is_front_page() ) : ?>
+                    <header>
+                        <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+                    </header>
+
+                    <?php
+                endif;
+                /* Start the Loop */
+                while ( have_posts() ) : the_post();
+                    /*
+                     * Include the Post-Format-specific template for the content.
+                     * If you want to override this in a child theme, then include a file
+                     * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+                     */
+                    get_template_part( 'template-parts/content', get_post_format() );
+                endwhile;
+                the_posts_navigation();
+            else :
+                get_template_part( 'template-parts/content', 'none' );
+            endif; ?>
+
+        </main><!-- #main -->
+    </div><!-- #primary -->
 
     <div class="banner" style="background: url('https://refugeeconnect.org.au/wp-content/themes/refugeeconnect/images/banner-bg.jpg') no-repeat;">
         <div class="container">
@@ -306,24 +309,4 @@
         <div style="clear: both;"></div>
     </div>
 
-    <div id="footer" class="section" style="background: #393736;">
-        <div class="container">
-            <div class="third left">
-                <img src="<?php echo bloginfo('template_directory'); ?>/images/footer-logo.png" width="260">
-            </div>
-            <div class="two-thirds right" style="text-align: right;">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#donate">DONATE</a></li>
-                    <li><a href="#workshops">WORKSHOPS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-                <small>Copyright Refugee Connect Ltd 2016</small>
-            </div>
-            <div style="clear: both;"></div>
-        </div>
-    </div>
-
-</body>
-</html>
+<?php get_footer(); ?>
