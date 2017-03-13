@@ -11,7 +11,7 @@
                 <li><a href="#workshops">WORKSHOPS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
-            <small>Copyright Refugee Connect Ltd 2016</small>
+            <small>Copyright Refugee Connect Ltd 2017</small>
         </div>
         <div style="clear: both;"></div>
     </div>
