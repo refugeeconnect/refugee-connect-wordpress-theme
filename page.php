@@ -107,9 +107,6 @@
             <div class="half left imageGrid"><img src="<?php echo bloginfo('template_directory'); ?>/images/refugee-council.jpg" height="100%"></div>
             <div class="half right imageGrid"><img src="<?php echo bloginfo('template_directory'); ?>/images/asylum-seeker.jpg" height="100%"></div>
             <div style="clear: both;"></div>
-            <div class="half left imageGrid"><img src="<?php echo bloginfo('template_directory'); ?>/images/volunteering.jpg" height="100%"></div>
-            <div class="half right imageGrid"><img src="<?php echo bloginfo('template_directory'); ?>/images/seek-volunteer.jpg" height="100%"></div>
-            <div style="clear: both;"></div>
         </div>
         <div style="clear: both;"></div>
     </div>
