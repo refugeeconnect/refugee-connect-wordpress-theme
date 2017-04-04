@@ -59,6 +59,17 @@
             <div style="clear: both;"></div>
         </div>
 
+        <div id="ourstart" class="section">
+            <div class="third right">
+                <img src="<?= wp_get_attachment_image_url(get_field('our_start_image'), 'medium'); ?>" srcset="<?= wp_get_attachment_image_srcset(get_field('our_start_image')); ?>" style="width: 100%;">
+            </div>
+
+            <div class="two-thirds right">
+                <?php the_field('our_start_text'); ?>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
     </div>
 
     <div class="section" id="donate" style="background: #f8961d;">
