@@ -106,6 +106,7 @@
             <div style="clear: both;"></div>
             <div class="half left imageGrid"><img src="<?php echo bloginfo('template_directory'); ?>/images/refugee-council.jpg" height="100%"></div>
             <div class="half right imageGrid"><img src="<?php echo bloginfo('template_directory'); ?>/images/asylum-seeker.jpg" height="100%"></div>
+            <div class="half left imageGrid"><a href="https://www.acnc.gov.au/RN52B75Q?ID=463CDB5D-2465-47B1-BBA6-79706BD76D34&noleft=1"><img src="<?php echo bloginfo('template_directory'); ?>/images/acnc-registered-charity-logo_rgb.png" height="100%"></a></div>
             <div style="clear: both;"></div>
         </div>
         <div style="clear: both;"></div>
