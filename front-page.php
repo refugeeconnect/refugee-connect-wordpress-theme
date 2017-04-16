@@ -16,7 +16,7 @@
             <?php if ( have_rows( 'about_box' ) ): ?>
 				<?php while ( have_rows( 'about_box' ) ) : the_row(); ?>
 					<div class="whiteBox half <?php the_sub_field('alignment'); ?>" style="text-align: center;">
-				<img src="<?= wp_get_attachment_image_url(get_sub_field('image'), 'medium') ?>" srcset="<?= wp_get_attachment_image_srcset(get_sub_field('image')); ?>" width="256">
+				<img src="<?= wp_get_attachment_image_url(get_sub_field('image'), 'medium') ?>" srcset="<?= wp_get_attachment_image_srcset(get_sub_field('image')); ?>" width="256" sizes="28vw">
 		                <?php the_sub_field('text'); ?>
 		            </div>
 				<?php endwhile; ?>
