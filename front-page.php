@@ -113,6 +113,7 @@
             <?php the_field('contact_text'); ?>
         </div>
         <div class="half right">
+            <?php the_field('legal_contact_text'); ?>
             <h2 class="underline leftline"><span style="color: #f8961d;">We’re</span> a member of</h2>
             <div style="clear: both;"></div>
             <div class="half left imageGrid"><img src="<?php echo bloginfo('template_directory'); ?>/images/refugee-council.jpg" height="100%"></div>
